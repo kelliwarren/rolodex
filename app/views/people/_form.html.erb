@@ -1,0 +1,41 @@
+<h1>New Person</h1>
+
+<%= form_for(@person) do |f| %>
+  <fieldset>
+    <section>
+      <%= f.label(:name) %>
+      <%= f.text_field(:name)%>
+    </section>
+    <section>
+      <%= f.label(:phone)%>
+      <%= f.text_field(:phone)%>
+    </section>
+    <section>
+      <%= f.label(:email)%>
+      <%= f.text_field(:email)%>
+    </section>
+     <section>
+      <%= f.label(:picture)%>
+      <%= f.text_field(:picture)%>
+    </section>
+     <section>
+      <%= f.label(:street_address)%>
+      <%= f.text_field(:street_address)%>
+    </section>
+     <section>
+      <%= f.label(:city)%>
+      <%= f.text_field(:city)%>
+    </section>
+     <section>
+      <%= f.label(:state)%>
+      <%= f.text_field(:state)%>
+    </section>
+     <section>
+      <%= f.label(:zip)%>
+      <%= f.text_field(:zip)%>
+    </section>
+    <section>
+      <%= f.submit('Save')%>
+    </section>
+  </fieldset>
+<% end %>
